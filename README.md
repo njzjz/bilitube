@@ -1,0 +1,11 @@
+# bilitube
+
+As is known, YouTube is unavaible in some areas, where Bilibili could be an alternative solution. With bilitube, when YouTube is unavaiable, the video on the web page will fallback to Bilibili.
+
+## Usage
+
+```html
+<div class="bilitube" data-youtube="diWEMGDKx9g" data-bvid="BV1454y1X7et">Loading...</div>
+<script src="https://cdn.jsdelivr.net/npm/bilitube@0/dist/bilitube.min.js" defer></script>
+```
+
