@@ -1,5 +1,7 @@
 # bilitube
 
+[![](https://data.jsdelivr.com/v1/package/npm/bilitube/badge/all)](https://www.jsdelivr.com/package/npm/bilitube)
+
 As is known, YouTube is unavaible in some areas, where Bilibili could be an alternative solution. With bilitube, when YouTube is unavaiable, the video on the web page will fallback to Bilibili.
 
 ## Usage
