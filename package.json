@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/njzjz/bilitube#readme",
   "devDependencies": {
-    "webpack": "5.26.2",
+    "webpack": "5.26.3",
     "webpack-cli": "4.5.0"
   }
 }
