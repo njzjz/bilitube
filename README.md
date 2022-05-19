@@ -8,6 +8,6 @@ As is known, YouTube is unavaible in some areas, where Bilibili could be an alte
 
 ```html
 <div class="bilitube" data-youtube="diWEMGDKx9g" data-bvid="BV1454y1X7et">Loading...</div>
-<script src="https://cdn.jsdelivr.net/npm/bilitube@0/dist/bilitube.min.js" defer></script>
+<script src="https://unpkg.com/bilitube@0/dist/bilitube.min.js" defer></script>
 ```
 
