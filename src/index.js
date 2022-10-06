@@ -8,13 +8,24 @@
     function use_youtube() {
         // https://www.youtube.com/embed/diWEMGDKx9g
         $$(".bilitube").forEach(element => {
-            load_video(element, `https://www.youtube.com/embed/${element.dataset.youtube}`);
+            if (element.dataset.youtube)
+                load_video(element, `https://www.youtube.com/embed/${element.dataset.youtube}`);
+            else if (element.dataset.bvid)
+                // has bilibili video id but doesn't have youtube video id, fallback to bilibili
+                load_video(element, `https://player.bilibili.com/player.html?bvid=${element.dataset.bvid}`);
+            else
+                element.innerHTML = 'No video id found.';
         });
     }
     function use_bilibili() {
         // https://player.bilibili.com/player.html?bvid=BV1454y1X7et
         $$(".bilitube").forEach(element => {
-            load_video(element, `https://player.bilibili.com/player.html?bvid=${element.dataset.bvid}`);
+            if (element.dataset.bvid)
+                load_video(element, `https://player.bilibili.com/player.html?bvid=${element.dataset.bvid}`);
+            else if (element.dataset.youtube)
+                element.innerHTML = 'Cannot connect to Youtube';
+            else
+                element.innerHTML = 'No video id found.';
         });
     }
     function check_youtube() {
