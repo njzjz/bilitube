@@ -1,6 +1,6 @@
 {
   "name": "bilitube",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "When youtube is unavaiable, fallback to bilibili.",
   "main": "src/index.js",
   "scripts": {
